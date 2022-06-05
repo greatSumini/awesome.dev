@@ -1,9 +1,19 @@
-import type { AppProps } from 'next/app';
+import type { AppProps } from "next/app";
 
-import '../styles/globals.css'
+import "../styles/globals.css";
 
-function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+if (typeof window !== "undefined") {
+  console.log(`
+   █████  ██     ██ ███████ ███████  ██████  ███    ███ ███████    ██████  ███████ ██    ██ 
+  ██   ██ ██     ██ ██      ██      ██    ██ ████  ████ ██         ██   ██ ██      ██    ██ 
+  ███████ ██  █  ██ █████   ███████ ██    ██ ██ ████ ██ █████      ██   ██ █████   ██    ██ 
+  ██   ██ ██ ███ ██ ██           ██ ██    ██ ██  ██  ██ ██         ██   ██ ██       ██  ██  
+  ██   ██  ███ ███  ███████ ███████  ██████  ██      ██ ███████ ██ ██████  ███████   ████                                                                                               
+  `);
 }
 
-export default App
+function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+}
+
+export default App;
