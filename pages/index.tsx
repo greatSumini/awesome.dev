@@ -1,6 +1,6 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import styles from '../styles/home.module.css'
+import styles from "../styles/home.module.css";
 
 export default function Home() {
   return (
@@ -18,16 +18,21 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          AWESOME.<br/>
+          AWESOME.
+          <br />
           DEV
         </h1>
+
+        <p style={{ color: "#ddd" }}>I{"'"}m selling this domain for $3000</p>
       </main>
 
       <footer className={styles.footer}>
-          contact:
-          <a className={styles.code}>010-4413-1261</a>
-          <a href="mailto:lead@awesome.dev" className={styles.code}>lead@awesome.dev</a>
+        contact:
+        <a className={styles.code}>+82 010-4413-1261</a>
+        <a href="mailto:lead@awesome.dev" className={styles.code}>
+          lead@awesome.dev
+        </a>
       </footer>
     </div>
-  )
+  );
 }
