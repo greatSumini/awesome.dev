@@ -22,8 +22,6 @@ export default function Home() {
           <br />
           DEV
         </h1>
-
-        <p style={{ color: "#ddd" }}>I{"'"}m selling this domain for $3000</p>
       </main>
 
       <footer className={styles.footer}>
